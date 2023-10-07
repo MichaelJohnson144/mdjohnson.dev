@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    /* Please note that `@next/next/recommended` includes `eslint-config-next` as a base configuration that incorporates `next/core-web-vitals,`
+    `eslint-plugin-next,` `eslint-plugin-react,` `eslint-plugin-react-hooks,` and `eslint-plugin-jsx-a11y:` */
+    "plugin:@next/next/recommended",
+    "plugin:cypress/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "allowReserved": true,
+    "ecmaFeatures": {
+      "globalReturn": true,
+      "impliedStrict": true,
+      "jsx": true,
+      "tsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "eol-last": ["error", "always"],
+    "object-curly-spacing": ["error", "always"]
+  }
+}
